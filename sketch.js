@@ -37,8 +37,3 @@ function keyPressed() {
     	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85});
   	}
 }
-
-
-
-
-
