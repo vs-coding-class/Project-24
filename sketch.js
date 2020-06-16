@@ -30,11 +30,13 @@ function draw() {
   dustbinObj.display();
   paperObject.display();
   groundObject.display();
+
+  launchBall();
 }
 
 function launchBall() {
   	if (keyCode === UP_ARROW) {
-    	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:85,y:-85});
+    	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:10,y:-10});
   	}
 }
 
